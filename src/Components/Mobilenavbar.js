@@ -10,7 +10,7 @@ export default function Mobilenavbar() {
             <ul>
                 <li>Features</li>
                 <li>Pricing</li>
-                <li>Resources</li>
+                <li>Resourcess</li>
             </ul>
             <hr/>
         <div className='logs'>
