@@ -68,7 +68,7 @@ a {
   color: white !important;
   background-color: hsl(180, 66%, 49%);
   padding: .5em 1em;
-  border-radius: 14px;
+  border-radius: 50px;
 }
 
 .App {
@@ -100,16 +100,23 @@ a {
     button {
       color: white !important;
       background-color: hsl(180, 66%, 49%);
-      padding: .5em 1em;
-      border-radius: 14px;
+      padding: .8em 2em;
+      border-radius: 30px;
       border: none;
-      font-weight: bold;
+      font-weight: bold; 
+      margin-top: 1em;
+      &:hover{
+        background-color: hsl(180, 98%, 52%);
+        transition: all .2s ease-in;
+        cursor: pointer;
+      }
     }
   }
 }
 
 .hamburger {
   display: none;
+
 }
 
 .hide{
@@ -120,14 +127,32 @@ a {
   display: flex;
 }
 
+.logo{
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+}
+
 @media only screen and (max-width: 1200px) {
   body {
 
     .Header{
       justify-content: space-between;
+      width: 97%;
+      padding: 1em;
+      a{
+        margin-top: 1em;
+      }
 
       .hamburger{
         display: block;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        &:hover{
+          cursor: pointer;
+        }
+        
       }
     }
 
@@ -136,6 +161,21 @@ a {
       display: none;
 
       
+  }
+  .presentation{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    .illustration-text{
+      text-align: center;
+      margin: 2em auto 0 auto;
+      p{
+        margin-top: 1em;
+      }
+    }
+    img{
+      text-align: center;
+
+    }
   }
 }
 

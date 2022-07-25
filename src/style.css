@@ -63,7 +63,7 @@ a {
   color: white !important;
   background-color: hsl(180deg, 66%, 49%);
   padding: 0.5em 1em;
-  border-radius: 14px;
+  border-radius: 50px;
 }
 
 .App {
@@ -92,10 +92,16 @@ a {
 .presentation .illustration-text button {
   color: white !important;
   background-color: hsl(180deg, 66%, 49%);
-  padding: 0.5em 1em;
-  border-radius: 14px;
+  padding: 0.8em 2em;
+  border-radius: 30px;
   border: none;
   font-weight: bold;
+  margin-top: 1em;
+}
+.presentation .illustration-text button:hover {
+  background-color: hsl(180deg, 98%, 52%);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -110,14 +116,45 @@ a {
   display: flex;
 }
 
+.logo {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+}
+
 @media only screen and (max-width: 1200px) {
   body .Header {
     justify-content: space-between;
+    width: 97%;
+    padding: 1em;
+  }
+  body .Header a {
+    margin-top: 1em;
   }
   body .Header .hamburger {
     display: block;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  body .Header .hamburger:hover {
+    cursor: pointer;
   }
   body .navbar {
     display: none;
+  }
+  body .presentation {
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  body .presentation .illustration-text {
+    text-align: center;
+    margin: 2em auto 0 auto;
+  }
+  body .presentation .illustration-text p {
+    margin-top: 1em;
+  }
+  body .presentation img {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

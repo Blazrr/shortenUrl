@@ -4,7 +4,8 @@ import illustration from '../images/illustration-working.svg'
 import hamburger from '../images/icon-brand-recognition.svg'
 import { useState } from 'react'
 import Mobilenavbar from './Mobilenavbar'
-import {GiHamburgerMenu} from 'react-icons/gi';
+import {GiHamburgerMenu, GiCrossedSabres} from 'react-icons/gi';
+
 
 export default function Header() {
 
@@ -12,7 +13,7 @@ export default function Header() {
   return (
     <>
     <div className='Header'>
-       <a href='google.com'><img src={logo}  /></a> 
+       <a href='google.com'><img className='logo' src={logo}  /></a> 
 
 
         <div className='navbar ' >
@@ -27,9 +28,9 @@ export default function Header() {
         </div>
         </div>
 
-       {openModal && <Mobilenavbar/>}
+       {openModal &&  <Mobilenavbar/> }
 
-     <button className='hamburger' onClick={() => {setOpenModal(!openModal)} } > <GiHamburgerMenu/> </button>
+     <button className='hamburger' onClick={() => {setOpenModal(!openModal)} } >   <GiHamburgerMenu  size={40} />  </button>
        
     </div>
 
@@ -38,9 +39,9 @@ export default function Header() {
       <div className='illustration-text'>
         <h1>More than just shorter links</h1>
         <p>Build your brand's recognition and get detailed 
-          insights on hoz your links are performing
+          insights on how your links are performing
         </p>
-        <button className={`hide${openModal ? ' show' : ''}`}>Get Started</button>
+        <button>Get Started</button>
       </div>
       <img src={illustration} />
     </div>
