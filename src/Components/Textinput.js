@@ -7,14 +7,14 @@ function Textinput() {
 
     const [post, setPosts] = useState('')
 
-    const [message, setMessage] = useState(['https://twitter.com/autoass',])
+    const [message, setMessage] = useState('https://twitter.com/autoass')
 
     const handleChange = event => {
         setMessage(event.target.value);
         console.log('value is:', event.target.value);   
       };
 
-    const qppp = useEffect (() => {
+    const refreshed = useEffect (() => {
         axios.get(`https://api.shrtco.de/v2/shorten?url=${message}`)
         .then(res=>{
             console.log(res.data.result.full_short_link)
@@ -36,7 +36,7 @@ function Textinput() {
     <>
         <input placeholder='Shorten a link here...' onChange={handleChange} value={message} />
         <h1>{post}</h1> 
-        <button onClick={qppp}>efwe</button>
+        <button onClick={refreshed}>Shorten the url</button>
     </>
   )
 }
