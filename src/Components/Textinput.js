@@ -17,12 +17,13 @@ function Textinput() {
 
 
 
-    const [students, setStudents] = useState('')
+    const [url, setUrl] = useState('')
    
-    const handleClickk = async() => {
+    const handleClick = async() => {
       const data = await axios.get(`https://api.shrtco.de/v2/shorten?url=${message}`)
-      setStudents(data.data.result.full_short_link)
-      console.log(students)
+      setUrl(data.data.result.full_short_link)
+      console.log(url)
+      
   }
   
  
@@ -32,8 +33,8 @@ function Textinput() {
   return (
     <>
         <input placeholder='Shorten a link here...' onChange={handleChange} value={message} />
-        <h1>a</h1> 
-        <button onClick={handleClickk}>Shorten the url</button>
+        <h1>{url}</h1> 
+        <button onClick={handleClick}>Shorten the url</button>
     </>
   )
 }
