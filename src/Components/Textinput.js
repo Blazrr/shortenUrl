@@ -1,11 +1,11 @@
 import React from 'react'
 import axios from 'axios'
-import {useState, useEffect} from 'react'
+import {useState, useEffect, async} from 'react'
 
 function Textinput() {
 
 
-    const [post, setPosts] = useState('')
+   
 
     const [message, setMessage] = useState('https://twitter.com/autoass')
 
@@ -14,20 +14,17 @@ function Textinput() {
         console.log('value is:', event.target.value);   
       };
 
-    const refreshed = useEffect (() => {
-        axios.get(`https://api.shrtco.de/v2/shorten?url=${message}`)
-        .then(res=>{
-            console.log(res.data.result.full_short_link)
-            setPosts(res.data.result.full_short_link)
-            
-        })
-        .catch(console.log('error'))
-        setPosts('try another link')
-    }, [])
 
 
+
+    const [students, setStudents] = useState('')
    
-
+    const handleClickk = async() => {
+      const data = await axios.get(`https://api.shrtco.de/v2/shorten?url=${message}`)
+      setStudents(data.data.result.full_short_link)
+      console.log(students)
+  }
+  
  
     
       
@@ -35,8 +32,8 @@ function Textinput() {
   return (
     <>
         <input placeholder='Shorten a link here...' onChange={handleChange} value={message} />
-        <h1>{post}</h1> 
-        <button onClick={refreshed}>Shorten the url</button>
+        <h1>a</h1> 
+        <button onClick={handleClickk}>Shorten the url</button>
     </>
   )
 }
