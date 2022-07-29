@@ -1,0 +1,30 @@
+.shorten-box {
+  background-color: purple;
+  padding: 1em;
+  width: 80%;
+  margin: 2em auto 0 auto;
+  border-radius: 8px;
+}
+.shorten-box .text-input {
+  width: 70%;
+  padding: 0.5em 0.3em;
+}
+.shorten-box .text-input::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+.shorten-box .text-input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+.shorten-box .text-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+.shorten-box .text-button {
+  width: 21%;
+  margin-left: 3%;
+  padding: 0.5em 0.3em;
+  border-radius: 8px;
+  border: none;
+}/*# sourceMappingURL=Textinput.css.map */
