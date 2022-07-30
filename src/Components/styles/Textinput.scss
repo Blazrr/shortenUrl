@@ -1,12 +1,15 @@
 .shorten-box{
-    background-color: purple;
-    padding: 1em;
+    background-color: rgb(139, 93, 139);
+    padding: 2em;
     width: 80%;
     margin: 2em auto 0 auto;
     border-radius: 8px;
+    background-image: url("../../images/bg-boost-desktop.svg");
     .text-input{
         width: 70%;
-        padding: .5em .3em;
+        padding: 1.3em .3em;
+        border-radius:8px;
+        border: none;
         &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: red;
             opacity: 1; /* Firefox */
@@ -16,9 +19,16 @@
     .text-button{
         width: 21%;
         margin-left: 3%;
-        padding: .5em .3em;
+        padding: 1.3em .3em;
         border-radius:8px;
         border: none;
+        color: white !important;
+        background-color: hsl(180, 66%, 49%);
+        &:hover{
+            background-color: hsl(180, 98%, 52%);
+            transition: all .2s ease-in;
+            cursor: pointer;
+          }
     }
 }
 

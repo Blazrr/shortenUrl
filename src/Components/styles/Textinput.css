@@ -1,13 +1,16 @@
 .shorten-box {
-  background-color: purple;
-  padding: 1em;
+  background-color: rgb(139, 93, 139);
+  padding: 2em;
   width: 80%;
   margin: 2em auto 0 auto;
   border-radius: 8px;
+  background-image: url("../../images/bg-boost-desktop.svg");
 }
 .shorten-box .text-input {
   width: 70%;
-  padding: 0.5em 0.3em;
+  padding: 1.3em 0.3em;
+  border-radius: 8px;
+  border: none;
 }
 .shorten-box .text-input::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
@@ -24,7 +27,14 @@
 .shorten-box .text-button {
   width: 21%;
   margin-left: 3%;
-  padding: 0.5em 0.3em;
+  padding: 1.3em 0.3em;
   border-radius: 8px;
   border: none;
+  color: white !important;
+  background-color: hsl(180deg, 66%, 49%);
+}
+.shorten-box .text-button:hover {
+  background-color: hsl(180deg, 98%, 52%);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }/*# sourceMappingURL=Textinput.css.map */
