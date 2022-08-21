@@ -1,4 +1,4 @@
-import { getByDisplayValue } from '@testing-library/react'
+
 import React from 'react'
 import './styles/mobilenavbar.css'
 

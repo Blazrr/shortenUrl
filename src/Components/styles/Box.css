@@ -5,5 +5,65 @@
   background-color: gainsboro;
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;
+}
+.Box .cross {
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  border: none;
+  background-color: transparent;
+}
+.Box .cross:hover {
+  cursor: pointer;
+}
+.Box hr {
+  display: none;
+}
+.Box .right-side {
+  margin-left: auto;
+  display: flex;
+}
+.Box .right-side h2 {
+  margin-right: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: hsl(180deg, 66%, 49%);
+}
+.Box .right-side button {
+  padding: 1em 2em;
+  border-radius: 12px;
+  border: none;
+  background-color: hsl(180deg, 66%, 49%);
+  color: white;
+}
+.Box .right-side button:hover {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  background-color: hsl(180deg, 98%, 52%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .Box {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+  }
+  .Box hr {
+    margin-top: 1em;
+    display: flex;
+  }
+  .Box .right-side {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .Box .right-side h2 {
+    margin-top: 1em;
+  }
+  .Box .right-side button {
+    width: 100% !important;
+    margin: 0.7em auto 0 auto !important;
+  }
 }/*# sourceMappingURL=Box.css.map */

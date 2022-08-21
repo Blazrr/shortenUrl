@@ -37,4 +37,19 @@
   background-color: hsl(180deg, 98%, 52%);
   transition: all 0.2s ease-in;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .shorten-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .shorten-box input {
+    width: 100% !important;
+    margin: 0 auto 0 auto !important;
+  }
+  .shorten-box button {
+    width: 100% !important;
+    margin: 2em auto 0 auto !important;
+  }
 }/*# sourceMappingURL=Textinput.css.map */
