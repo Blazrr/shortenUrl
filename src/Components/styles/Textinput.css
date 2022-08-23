@@ -1,34 +1,52 @@
-.shorten-box {
+.hero2 {
+  position: relative;
+}
+.hero2 .hero2-bg {
+  background-color: hsl(0deg, 0%, 75%) !important;
+  position: absolute;
+  margin-top: 4em;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.hero2 .shorten-box {
+  position: relative;
   background-color: rgb(139, 93, 139);
   padding: 2em;
   width: 80%;
   margin: 2em auto 0 auto;
   border-radius: 8px;
   background-image: url("../../images/bg-boost-desktop.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
-.shorten-box span {
+.hero2 .shorten-box .borderr {
+  border: 2px solid red !important;
+}
+.hero2 .shorten-box span {
   color: red;
   margin-top: 1em;
 }
-.shorten-box .text-input {
+.hero2 .shorten-box .text-input {
   width: 70%;
   padding: 1.3em 0.3em;
   border-radius: 8px;
   border: none;
 }
-.shorten-box .text-input::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.hero2 .shorten-box .text-input::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1; /* Firefox */
 }
-.shorten-box .text-input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.hero2 .shorten-box .text-input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1; /* Firefox */
 }
-.shorten-box .text-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.hero2 .shorten-box .text-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1; /* Firefox */
 }
-.shorten-box .text-button {
+.hero2 .shorten-box .text-button {
   width: 21%;
   margin-left: 3%;
   padding: 1.3em 0.3em;
@@ -37,7 +55,7 @@
   color: white !important;
   background-color: hsl(180deg, 66%, 49%);
 }
-.shorten-box .text-button:hover {
+.hero2 .shorten-box .text-button:hover {
   background-color: hsl(180deg, 98%, 52%);
   transition: all 0.2s ease-in;
   cursor: pointer;

@@ -1,0 +1,13 @@
+.advanced {
+  position: relative;
+  text-align: center;
+  margin-top: 2em;
+  color: hsl(255deg, 11%, 22%);
+  font-weight: 700;
+  background-color: hsl(0deg, 0%, 75%);
+}
+.advanced h4 {
+  width: 50%;
+  text-align: center;
+  margin: 0.5em auto 0 auto;
+}/*# sourceMappingURL=Advanced.css.map */

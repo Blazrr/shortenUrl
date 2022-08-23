@@ -20,7 +20,7 @@ function Textinput() {
     if (event.target.value.trim().length !== 0) {
       console.log('input value is NOT empty');
       setAddClass(false)
-    } else {
+    } else if (event.target.value.trim().length > 0){
       console.log('input value is empty');
       setAddClass(true)
       
@@ -41,11 +41,14 @@ function Textinput() {
 
   
   return (
-    <>
+    <div className='hero2'>
+    <div className='hero2-bg'></div>
       <div className='shorten-box'>
-        <input placeholder='Shorten a link here...' onChange={handleChange} value={message} className='text-input' />
+        <div>
+        <input placeholder='Shorten a link here...' onChange={handleChange} value={message}  className={addClass ? 'borderr text-input' : 'text-input'} />
         <button onClick={handleClick} className='text-button'>Shorten it! </button>
-        <span> {addClass ? 'Please enter an URL' : ''} </span>
+        </div>
+        <span> {addClass ? 'Please add a link' : null} </span>
       </div>
 
     {data.map((mess, idx) => {
@@ -58,8 +61,8 @@ function Textinput() {
       />
     })}
 
+  </div>
 
-    </>
   )
 }
 

@@ -27,6 +27,7 @@ export default function Box(props) {
 
   
   return (
+    <>
     <div className='Box' >
       <button className='cross' onClick={props.handleDelete}><ImCross/></button>
         <h1>{props.fullLink}</h1>
@@ -34,9 +35,10 @@ export default function Box(props) {
         <div className='right-side'>
         <h2 >{props.shortLink} </h2>
         <CopyToClipboard text={props.shortLink} onCopy={()  => setCopied(true)}>
-          <button  className={ copiedClass ? 'isClicked' : '' }  onClick={onAbc} >{copiedClass ? 'Copied' : 'Copy'} </button>        
+          <button  className={ copiedClass ? 'isClicked' : '' }  onClick={onAbc} >{copiedClass ? 'Copied !' : 'Copy'} </button>        
         </CopyToClipboard>
         </div>
     </div>
+    </>
   )
 }

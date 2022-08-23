@@ -1,20 +1,23 @@
+
 .Box{
     padding: 2em;
     width: 80%;
     margin: 2em auto 0 auto;
-    background-color: gainsboro;
+    background-color: white;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     position: relative;
+    transition: all .2s ease-in;
     .isClicked{
         background-color: purple !important;
+        transition: all .2s ease-in;
     }
     
     .cross{
         position: absolute;
-        top: 2em;
-        right: 2em;
+        top: 1em;
+        right: 1em;
         border: none;
         background-color: transparent;
         &:hover{
@@ -48,6 +51,7 @@
         }
     }
 }
+
 
 @media only screen and (max-width: 1200px) {
 
