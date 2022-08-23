@@ -7,6 +7,10 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    .isClicked{
+        background-color: purple !important;
+    }
+    
     .cross{
         position: absolute;
         top: 2em;

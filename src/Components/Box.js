@@ -10,6 +10,10 @@ export default function Box(props) {
 
   const [copied, setCopied] = useState(false)
   const [value, setValue] = useState('')
+  
+
+
+
 
 
   
@@ -21,9 +25,8 @@ export default function Box(props) {
         <div className='right-side'>
         <h2 >{props.shortLink} </h2>
         <CopyToClipboard text={props.shortLink} onCopy={()  => setCopied(true)}>
-          <button >{copied ? 'Copied' : 'Copy'}</button>        
+          <button  className={ copied ? 'isClicked' : '' }  onClick={props.handleAddClass} >{copied ? 'Copied' : 'Copy'} </button>        
         </CopyToClipboard>
-
         </div>
     </div>
   )

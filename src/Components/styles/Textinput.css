@@ -6,6 +6,10 @@
   border-radius: 8px;
   background-image: url("../../images/bg-boost-desktop.svg");
 }
+.shorten-box span {
+  color: red;
+  margin-top: 1em;
+}
 .shorten-box .text-input {
   width: 70%;
   padding: 1.3em 0.3em;
