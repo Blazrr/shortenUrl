@@ -10,4 +10,27 @@
   width: 50%;
   text-align: center;
   margin: 0.5em auto 0 auto;
+}
+.advanced .cards {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto 0 auto;
+}
+.advanced .cards .card {
+  width: 25% !important;
+  background-color: white;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  height: 280px;
+  border-radius: 8px;
+  text-align: left !important;
+}
+.advanced .cards .card h3 {
+  margin-top: 5em;
+  margin-left: 2em !important;
+}
+.advanced .cards .card p {
+  margin-top: 2em;
 }/*# sourceMappingURL=Advanced.css.map */
