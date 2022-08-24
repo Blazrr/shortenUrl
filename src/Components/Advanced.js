@@ -20,7 +20,7 @@ function Advanced() {
             <h3>Detailed Records</h3>
             <p>
               Gain insight into who is clicking your links. Knowing when and where people engage with your content helps
-              inform better decisions.
+              inform better decisions..
             </p>
           </div>
 
