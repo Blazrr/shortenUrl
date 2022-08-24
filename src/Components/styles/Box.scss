@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    transition: all .2s ease-in;
+    transition: all .2s ease-in ;
     .isClicked{
         background-color: purple !important;
         transition: all .2s ease-in;

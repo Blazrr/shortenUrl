@@ -1,4 +1,7 @@
 .advanced{
+    h1{
+        margin-top: 2em;
+    }
     position: relative;
     text-align: center;
     margin-top: 2em;
@@ -6,32 +9,85 @@
     font-weight: 700;
     background-color: hsl(0, 0%, 75%); 
     h4{
-        width: 50%;
+        width: 30%;
         text-align: center;
         margin: .5em auto 0 auto;
+        color: gray;
     }
     .cards{
         margin-top: 2em;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 1em auto 0 auto;
+        margin: 3em auto 0 auto;
+        .blue-line{
+            height: 5px;
+            width: 80%;
+            background-color: hsl(180, 66%, 49%);
+            position: absolute;
+        }
+        .detailed{
+            margin-top: 4em;    
+        }
+        .fully{
+            margin-top: 8em;
+        }
         .card{
             width: 25% !important;
             background-color: white;
             margin-left: 1.5em;
             margin-right: 1.5em;
-            height: 280px;
+            padding: 1em 2em 2em 2em;
             border-radius: 8px;
             text-align: left !important;
+            position: relative;
+            z-index: 2;
+           
+            .image-div{
+                background-color: hsl(255, 11%, 22%) !important;
+                border-radius: 50%;
+                padding: 1em;
+                position: absolute;
+                top: -2em;
+                left: 2em;
+            img{
+                display: block;
+            }
+        }
             h3{
-                margin-top: 5em;
+                margin-top: 3em;
                 margin-left: 2em  !important;
+                color: hsl(255, 11%, 22%);
+                font-size: 1.5em;
             }
             p{
                 margin-top: 2em;
+                margin-left: 2em;
+                color: grey;
             }
         }
        
     }
+}
+
+@media only screen and (max-width: 1200px) {
+.advanced{
+    
+    .cards{
+        flex-direction: column;
+        width: 80% !important;
+       
+        .blue-line{
+            height: 80% !important;
+            width: 3px !important;
+            background-color: hsl(180, 66%, 49%);
+            position: absolute;
+        }
+        .card{
+         width: 100% !important;
+         margin-top: 5em !important;
+        }
+    }
+}
+
 }

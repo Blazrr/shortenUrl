@@ -27,7 +27,7 @@ export default function Box(props) {
 
   
   return (
-    <>
+   
     <div className='Box' >
       <button className='cross' onClick={props.handleDelete}><ImCross/></button>
         <h1>{props.fullLink}</h1>
@@ -39,6 +39,6 @@ export default function Box(props) {
         </CopyToClipboard>
         </div>
     </div>
-    </>
+   
   )
 }
