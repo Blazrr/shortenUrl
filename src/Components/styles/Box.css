@@ -15,9 +15,10 @@
 }
 .Box .cross {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: -1.5em;
+  right: -1em;
   border: none;
+  color: black;
   background-color: transparent;
 }
 .Box .cross:hover {
@@ -42,6 +43,7 @@
   border: none;
   background-color: hsl(180deg, 66%, 49%);
   color: white;
+  margin-top: auto;
 }
 .Box .right-side button:hover {
   cursor: pointer;

@@ -1,0 +1,93 @@
+.Footer {
+  text-align: center;
+  background-image: url("../../images/bg-boost-desktop.svg");
+  background-size: cover;
+  background-color: hsl(255, 11%, 22%);
+  color: white;
+  padding: 3em;
+
+  button {
+    color: white !important;
+    background-color: hsl(180, 66%, 49%);
+    padding: .8em 2em;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    margin-top: 2em;
+
+    &:hover {
+      background-color: hsl(180, 98%, 52%);
+      transition: all .2s ease-in;
+      cursor: pointer;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: hsl(255, 9%, 9%);
+  padding: 2em;
+  h4:hover {
+    color: gray;
+    transition: all .2s ease-in;
+    cursor: pointer;
+  }
+
+  .links-div {
+
+    margin-top: 1.5em;
+    margin: 0 auto 0 auto !important;
+
+    a {
+
+      margin: .3em 2em 0 auto !important;
+      text-align: left;
+      display: flex;
+
+      &:hover {
+        color: gray;
+        transition: all .2s ease-in;
+        cursor: pointer;
+      }
+    }
+
+  }
+
+  .logos {
+    img {
+      margin-left: 1em;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .links{
+    flex-direction: column;
+    text-align: center;
+    h4{
+      margin-top: 1em;
+    }
+    
+    
+    .links-div{
+      margin-top: 1em !important;
+      a{
+        text-align: center ;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 0 auto !important;
+       
+      }
+    }
+    .logos{
+      margin-top: 1.5em;
+    }
+  }
+}

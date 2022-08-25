@@ -20,6 +20,7 @@
         justify-content: center;
         align-items: center;
         margin: 3em auto 0 auto;
+        padding-bottom: 3em;
         .blue-line{
             height: 5px;
             width: 80%;
@@ -38,7 +39,7 @@
             margin-left: 1.5em;
             margin-right: 1.5em;
             padding: 1em 2em 2em 2em;
-            border-radius: 8px;
+            border-radius: 6px;
             text-align: left !important;
             position: relative;
             z-index: 2;
@@ -78,7 +79,7 @@
         width: 80% !important;
        
         .blue-line{
-            height: 80% !important;
+            height: 50% !important;
             width: 3px !important;
             background-color: hsl(180, 66%, 49%);
             position: absolute;

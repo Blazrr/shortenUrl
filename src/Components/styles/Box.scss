@@ -16,9 +16,10 @@
     
     .cross{
         position: absolute;
-        top: 1em;
-        right: 1em;
+        top: -1.5em;
+        right: -1em;
         border: none;
+        color: black;
         background-color: transparent;
         &:hover{
             cursor: pointer;
@@ -43,6 +44,7 @@
             border:none;
              background-color:  hsl(180, 66%, 49%);
             color: white;
+            margin-top: auto;
             &:hover{
                 cursor: pointer;
                 transition: all .2s ease-in;
@@ -59,6 +61,7 @@
         display: flex;
         flex-direction: column;
         font-size: .7em;
+        
         hr{
             margin-top: 1em;
             display: flex;

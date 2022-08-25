@@ -97,20 +97,7 @@ a {
       max-width: 500px;
     }
 
-    button {
-      color: white !important;
-      background-color: hsl(180, 66%, 49%);
-      padding: .8em 2em;
-      border-radius: 30px;
-      border: none;
-      font-weight: bold; 
-      margin-top: 1em;
-      &:hover{
-        background-color: hsl(180, 98%, 52%);
-        transition: all .2s ease-in;
-        cursor: pointer;
-      }
-    }
+
   }
 }
 
@@ -131,6 +118,20 @@ a {
   width: 100%;
   height: auto;
   min-width: 100px;
+}
+button {
+  color: white !important;
+  background-color: hsl(180, 66%, 49%);
+  padding: .8em 2em;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold; 
+  margin-top: 2em;
+  &:hover{
+    background-color: hsl(180, 98%, 52%);
+    transition: all .2s ease-in;
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 1200px) {

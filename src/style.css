@@ -89,20 +89,6 @@ a {
   font-size: 1.2em;
   max-width: 500px;
 }
-.presentation .illustration-text button {
-  color: white !important;
-  background-color: hsl(180deg, 66%, 49%);
-  padding: 0.8em 2em;
-  border-radius: 30px;
-  border: none;
-  font-weight: bold;
-  margin-top: 1em;
-}
-.presentation .illustration-text button:hover {
-  background-color: hsl(180deg, 98%, 52%);
-  transition: all 0.2s ease-in;
-  cursor: pointer;
-}
 
 .hamburger {
   display: none;
@@ -120,6 +106,21 @@ a {
   width: 100%;
   height: auto;
   min-width: 100px;
+}
+
+button {
+  color: white !important;
+  background-color: hsl(180deg, 66%, 49%);
+  padding: 0.8em 2em;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  margin-top: 2em;
+}
+button:hover {
+  background-color: hsl(180deg, 98%, 52%);
+  transition: all 0.2s ease-in;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -19,7 +19,7 @@ export default function Header() {
         <div className='navbar ' >
             <ul>
                 <li>Features</li>
-                <li>Priccing</li>
+                <li>Pricing</li>
                 <li>Resources</li>
             </ul>
         <div className='logs'>
