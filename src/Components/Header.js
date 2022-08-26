@@ -30,7 +30,7 @@ export default function Header() {
 
        {openModal &&  <Mobilenavbar/> }
 
-     <button className='hamburger' onClick={() => {setOpenModal(!openModal)} } >   <GiHamburgerMenu  size={40} />  </button>
+     <button className='hamburger' onClick={() => {setOpenModal(!openModal)} } >   <GiHamburgerMenu  size={40} color='black' />  </button>
        
     </div>
 
