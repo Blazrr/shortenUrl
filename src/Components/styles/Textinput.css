@@ -34,15 +34,18 @@
   border-radius: 8px;
   border: none;
 }
-.hero2 .shorten-box .text-input::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.hero2 .shorten-box .text-input::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1; /* Firefox */
 }
-.hero2 .shorten-box .text-input:-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.hero2 .shorten-box .text-input:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1; /* Firefox */
 }
-.hero2 .shorten-box .text-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+.hero2 .shorten-box .text-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: red;
   opacity: 1; /* Firefox */
 }

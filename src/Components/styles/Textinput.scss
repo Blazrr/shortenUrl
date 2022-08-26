@@ -1,15 +1,15 @@
-.hero2{ 
+.hero2 {
   position: relative;
-  .hero2-bg{
-    background-color: hsl(0, 0%, 75%)  !important; 
+  .hero2-bg {
+    background-color: hsl(0, 0%, 75%) !important;
     position: absolute;
     margin-top: 4em;
     width: 100%;
     height: 100%;
     z-index: 0;
   }
-   .shorten-box{
-    position: relative; 
+  .shorten-box {
+    position: relative;
     background-color: hsl(255, 11%, 22%);
     padding: 2em;
     width: 80%;
@@ -19,54 +19,54 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    .borderr{
-      border: 2px solid red!important;
+    .borderr {
+      border: 2px solid red !important;
     }
-    
-    span{
+
+    span {
       color: red;
       margin-top: 1em;
     }
-    .text-input{
-        width: 70%;
-        padding: 1.3em .3em;
-        border-radius:8px;
-        border: none;
-        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-            color: red;
-            opacity: 1; /* Firefox */
-          }
-    }
-
-    .text-button{
-        width: 21%;
-        margin-left: 3%;
-        padding: 1.3em .3em;
-        border-radius:8px;
-        border: none;
-        color: white !important;
-        background-color: hsl(180, 66%, 49%);
-        &:hover{
-            background-color: hsl(180, 98%, 52%);
-            transition: all .2s ease-in;
-            cursor: pointer;
-          }
-    }
-}
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .shorten-box {
-      display: flex;
-      flex-direction: column;
-      input{
-        width: 100% !important;
-        margin: 0 auto 0 auto !important;
+    .text-input {
+      width: 70%;
+      padding: 1.3em 0.3em;
+      border-radius: 8px;
+      border: none;
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: red;
+        opacity: 1; /* Firefox */
       }
-      button{
-        width: 100% !important;
-        margin: 2em auto 0 auto !important;
+    }
+
+    .text-button {
+      width: 21%;
+      margin-left: 3%;
+      padding: 1.3em 0.3em;
+      border-radius: 8px;
+      border: none;
+      color: white !important;
+      background-color: hsl(180, 66%, 49%);
+      &:hover {
+        background-color: hsl(180, 98%, 52%);
+        transition: all 0.2s ease-in;
+        cursor: pointer;
       }
     }
   }
+}
+
+@media only screen and (max-width: 1200px) {
+  .shorten-box {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 100% !important;
+      margin: 0 auto 0 auto !important;
+    }
+    button {
+      width: 100% !important;
+      margin: 2em auto 0 auto !important;
+    }
+  }
+}

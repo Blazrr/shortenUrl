@@ -37,6 +37,7 @@ function Textinput() {
   const deleteData = (evt, idx) => {
     updateData(data.filter((image) => image.idx !== idx));
   };
+   
 
 
   

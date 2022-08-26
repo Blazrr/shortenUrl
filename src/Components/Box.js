@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react'
 import './styles/Box.css'
 import CopyToClipboard from 'react-copy-to-clipboard'
-import { GiTargetArrows } from 'react-icons/gi'
 import { ImCross } from 'react-icons/im'
 import { motion } from 'framer-motion'
 
