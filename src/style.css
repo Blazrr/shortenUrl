@@ -116,7 +116,6 @@ button {
   border: none;
   font-weight: bold;
   margin-top: 2em;
-  text-align: center;
 }
 button:hover {
   background-color: hsl(180deg, 98%, 52%);
